@@ -1,0 +1,81 @@
+{% load static %}
+
+<footer class="page-footer blue darken-1">
+  
+  <div class="foot">
+    <div class="row">
+      <div class="col l3 s12">
+        <h5>About</h5>
+      <div class="content">
+        <p class="abt">The Official Debate & Poetry Society of SRM Sonepat. We aim to conduct many debates and other literacy events 
+          and give the students an wonderful learning experience. We will also be conducting poetry and other events.</p>
+      </div>
+  </div>
+
+  <div class="col l3 s6">
+    <h5>Address</h5>
+    <div class="content">
+      <p class="abt">SRM University, Delhi-NCR, Sonepat.</p>
+      <p class="abt"> Plot No. 39, Rajiv Gandhi Education City Delhi-NCR Sonepat – Kundli Urban Complex, Post Office P.S.Rai, Sonipat, Haryana 131029
+      </p>
+    </div>
+  </div>
+
+  <div class="col l3 s6">
+    <h5>Connect</h5>
+    <br>
+    <ul>
+      <li><img src="{% static 'main/images/ig.png' %}" class="logo2" alt="insta"></li>
+      <li><a class="link1" href="https://www.instagram.com/srmvoiceup/">instagram.com/srmvoiceup</a></li>
+      <br>
+      <li><img src="{% static 'main/images/fb.png' %}" class="logo2" alt="insta"></li>
+      <li><a class="link1" href="https://www.facebook.com/srmhmun/">facebook.com/srmhmun/</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="content">
+  <center>
+      <p class="abt1">&#169 Created By : Pradhyumna Rao</p>
+  </center>
+  </div>
+</div>
+
+<style>
+  .row .col.l3{
+  margin-left: 100px;
+}
+h5{
+  font-style: oblique;
+  color:black;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.abt{
+  font-family: 'monospace';
+}
+
+.abt1{
+  font-family: 'monospace';
+  color: black;
+  font-weight: 800;
+}
+.logo2{
+  cursor: pointer;
+  margin-right: auto;
+  margin-bottom: auto;
+  float: left;
+  height: 30px;
+} 
+.link1{
+  font-size: medium;
+  font-family: 'monospace';
+  color: white;
+  margin-left: 10px;
+}
+section {
+  min-height: 100vh; /* minus the height of the footer */
+}
+</style>
+</footer>

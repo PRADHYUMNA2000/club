@@ -1,0 +1,90 @@
+{% load static %}
+
+<nav>
+    <div class="bar">
+     <a href="{% url 'index' %}"><img  src="{% static 'main/images/logo.png' %}" alt="Logo" class="logo"></a> 
+      <a id="logo-container" href="{% url 'index' %}" class="brand-logo" style="font-family: Georgia, serif;;">VoiceUp</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'team' %}">Our Team</a></li>
+        <li><a href="{% url 'events' %}">Events</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+      </ul>
+   
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<style>
+    nav{
+       
+        background: #1e88e5 ;
+        padding: 0px 20px;
+    }
+    li,a,button{
+        font-family : Georgia, serif;;
+        font-weight: 500;
+        font-size: 15px;
+        color: #11b8f0;
+        text-decoration: none; 
+    } 
+    
+    .logo{
+        cursor: pointer;
+        margin-right: auto;
+        margin-bottom: auto;
+        float: left;
+        height: 60px;
+        margin-right: 3px;
+    } 
+
+ 
+
+</style>
+
+
+
+    <!-- <nav>
+        <div class="teal lighten-5">
+          <img href="#" src="{% static 'main/images/logo.png' %}" alt="Logo" class="logo">
+          <a href="#" class="brand-logo">VOICEUP</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">OUR TEAM</a></li>
+            <li><a href="sass.html">EVENTS</a></li>
+            <li><a class = "cta" href="{% url 'register' %}"> <button>Register</button></a> </li>
+          </ul>
+        </div>
+    </nav>
+
+    <style>
+          nav{
+              position: fixed;
+              background: #24252A;
+              padding: 0px 20px;
+            }
+            li,a,button{
+                font-family : "Montserrat", sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #edf0f1;
+                text-decoration: none; 
+            } 
+         
+            .logo{
+                cursor: pointer;
+                margin-right: auto;
+                float: left;
+                height: 50px;
+                margin-right: 3px;
+            } 
+            button{
+                padding: 9px 25px;
+                background-color: rgba(0,136,169,1);
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+            }
+            button:hover{
+                background-color: rgba(0,136,169,0.8);
+            }
+        </style> -->

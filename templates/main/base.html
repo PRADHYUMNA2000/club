@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/materialize.min.css' %}">
+    <script src = "{% static 'main/js/materialize.min.js' %}"></script>
+    <titleSRM VoiceUp</title>
+
+</head>
+<body>
+    {% include 'main/nav.html' %}
+    {% block content %}{% endblock %}
+    {% include 'main/footer.html' %}
+</body>
+</html>

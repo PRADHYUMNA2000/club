@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>SRM VoiceUp</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/materialize.min.css' %}">
+    <script src = "{% static 'main/js/materialize.min.js' %}"></script>
+</head>
+
+<body>
+  {% include 'main/nav.html' %}
+  <br>
+  <div id="index-banner">
+        <div class="section no-pad-bot" >
+      <div class="container">
+        <video style="box-shadow: 0px 0px 15px 0px #000; margin-left :320px ;" height="300px" width="290px" autoplay muted>
+          <source src="{% static 'main/videos/lg-reveal.mp4' %}" type="video/mp4">
+        </video>          
+        <br>
+        <h1 class="header center blue-text text-darken-2" style="font-family:Georgia, serif;">SRM VoiceUp</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">The Official Debate & Poetry Society of SRM Sonepat</h5>
+        </div>
+        <h3 class="header center col s12 light">Register Now to be a part of VoiceUp</h3>
+        <br>
+        <div class="row center">
+          <a href="{% url 'register' %}" id="download-button" class="btn-large waves-effect waves-light blue accent-2">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Debating Society</h5>
+            <p class="light">We aim to conduct many debates and other literacy events and give the students an wonderful learning experience. Our focus is also to conduct training sessions, Mock MUNs, Youth Parliament to give the students an insight on how debating competitions are held in college circuit.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Training Approach</h5>
+            <p class="light">A Society will be formed and proper training would be given to students in all aspects so that our society can participate in various debating circuits. User Experience will be our top-most priority and it will be a wonderful learning curve with loads of experience on various platforms.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">At Convenience</h5>
+            <p class="light">Being an Open Club, we are welcome to new thoughts and ideas so that we have a plan of action on how to take forward the club and form a great society and compete in other debating circuits. </p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <br>
+  {% include 'main/footer.html' %}
+  </body>
+</html>

@@ -1,0 +1,83 @@
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/reg.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css1/materialize.min.css' %}">
+    <script src = "{% static 'main/js/materialize.min.js' %}"></script>
+    <title>Register</title>
+</head> 
+<body>
+    
+    {% include 'main/nav.html' %}
+       
+    <section class="container-fluid bg">
+        <div class='form-group'>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>
+                    <div class="alert alert-success alert-dismissable">{{message}}</div>
+                </li>
+                
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <h3 class="center-align">Registration Form</h3>
+        <p class="center-align">Register Now to be a part of VoiceUp Club</p>
+
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-3">
+                <form  class = "form-container" method="POST">
+                    {% csrf_token %}
+                    {{ studentform.non_field_errors }}
+
+                <div class="form-group">
+                    <label for="{{ studentform.name.id_for_label }}">Name</label>
+                    <br>
+                    {{ studentform.name }}                      
+                </div>
+                <div class="form-group">
+                    <label for="{{ studentform.roll_number.id_for_label }}">Roll Number</label>
+                    <br>
+                    {{ studentform.roll_number }}                        
+                </div>
+                <div class="form-group">
+                    <label for="{{ studentform.course.id_for_label }}">Course/Year</label>
+                    <br>
+                    {{ studentform.course }}                        
+                </div>
+                <div class="form-group">
+                    <label for="{{ studentform.email_id_for_label }}">Email</label>
+                    <br>
+                    {{ studentform.email_id }}  
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="{{ studentform.past_experiences_for_label }}">Experiences</label>
+                    {{ studentform.past_experiences }}  
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </section>
+        </section>
+    </section>
+    
+</body>
+
+<style>
+    h3{
+        text-decoration: underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<h2 class="center header col s12 dark">VoiceUp Events</h2>
+
+<div>
+    <div class="container">
+    <video height="300" width="950" controls autoplay>
+        <source src="{% static 'main/videos/Video from Pradhyumna Rao.mp4' %}" type="video/mp4">
+    </video>
+    </div>
+    
+    <h3 class="text1"><i>SRM VoiceUp succesfully conducted an <u>Online Debate and Poetry Competition</u> on 28 May 2020.</i></i> </h3>
+    <h4 class="text2"><i>More than 50 students participated and Won Exciting Cash Prizes and Vouchers.</i></h4>
+    <h4 class="text3"><i>All the participants were Awarded Certificates with Winners recieving Merit Certificates.</i></h4>
+</div>
+<br>
+<div>
+    <h2 class="center header col s12 light">Listen To Our Members</h2>
+    <br>
+    <video class="vid2" height="300" width="250" controls>
+        <source src="{% static 'main/videos/Video from Pradhyumna Rao3.mp4' %}" type="video/mp4">
+    </video>
+
+    <video class="vid2" height="300" width="250" controls>
+        <source src="{% static 'main/videos/Video from Pradhyumna Rao1.mp4' %}" type="video/mp4">
+    </video>
+
+    
+    <video class="vid3" height="300" width="250" controls>
+        <source src="{% static 'main/videos/Video from Pradhyumna Rao2.mp4' %}" type="video/mp4">
+    </video>
+</div>
+<br>
+
+<div>
+    <p class="tag1">Vishnupriya Arora</p>
+    <p class="tag2">Ashish Suhag </p>
+    <p class="tag3">Khushi Dhar</p>
+</div>
+
+
+<div  style="line-height: 1px">
+    <p class="tag4">B-Tech CSE/2nd Year</p>
+    <p class="tag5">B-Tech CSE/3rd Year</p>
+    <p class="tag6">B-Tech CSE/2nd Year</p>
+</div>
+
+<br><br><br>
+
+</div>
+
+
+<style>
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: underline;
+        font-size: 50px;
+      }
+    .vid1{
+        margin-left: 150px;
+    }
+    .vid2{
+        margin-left: 150px;
+    }
+    .vid3{
+        margin-left: 150px;
+    }
+ 
+    .tag1{
+        margin-top: 2px;
+        font-family: 'Impact';
+        font-size: x-large;
+        margin-left:185px;
+        display:inline-block;
+        text-decoration: wavy;
+    }
+    .tag2{
+        font-family: 'Impact' ;
+        font-size: x-large;
+        text-decoration: wavy;
+        margin-left:250px;
+        display:inline;
+        
+    }
+    .tag3{
+        font-family: 'Impact';
+        font-size: x-large;
+        margin-left:280px;
+        display:inline;
+        text-decoration: wavy;
+    }
+
+
+    .tag4{
+        margin-left:200px;
+        display:inline;
+        font-family: Georgia, serif;
+    }
+    .tag5{
+        margin-left:260px;
+        display:inline;
+        font-family: Georgia, serif;
+    }
+    .tag6{
+        margin-left:260px;
+        display:inline;
+        font-family: Georgia, serif;
+    }
+    .text1{
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+        font-size: 30px;
+        text-align: center;
+    }
+    .text2{
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        text-align: center;  
+        
+    }
+    .text3{
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>    
+
+{% endblock %}
